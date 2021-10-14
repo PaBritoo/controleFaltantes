@@ -1,0 +1,20 @@
+{
+  "name": "faltante",
+  "version": "1.0.0",
+  "description": "controledefaltantes",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "mariadb": "^2.5.4",
+    "nodemon": "^2.0.13",
+    "sequelize": "^6.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \\ \"Error: no test specified\\\" && exit 1"
+  },
+  "author": "Pablo Brito",
+  "license": "ISC"
+}

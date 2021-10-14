@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>LANÇAMENTOS | FALTANTES</title>
+       
+</head>
+
+<body>
+
+    <style>
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to right, rgb(14, 70, 122), rgb(0, 9, 36));
+        }
+
+        .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 8px;
+        border-radius: 10px;
+        width: 70%;
+        }
+
+        fieldset {
+        border : 2px solid rgb(14, 70, 122);
+        }
+
+        legend {
+        border: 1px solid rgb(14, 70, 122) ;
+        padding: 8px;
+        text-align: center;
+        background-color: rgb(53, 132, 197) ;
+        border-radius: 10px;
+        color: white;
+        font-style: italic;
+        }
+
+        .inputBox {
+        position: relative;
+        outline: none;
+        color: white;
+        font-size: 15px;
+        }
+
+        .inputUser {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid white;
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        width: 100%;
+        letter-spacing: 2px;
+        }
+
+        .labelInput {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        pointer-events: none;
+        transition: .5s;
+        }
+
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput {
+        top: -19px;
+        font-size: 11px;
+        color: rgb(0, 255, 234);
+        }
+
+        #botao {
+        background-color: rgb(39, 40, 44);
+        width: 100%;
+        color: white;
+        font-style: oblique;
+        font-size: 14px;
+        }
+
+    </style>
+
+    <div class="box">
+        <form method="" action="">
+            <fieldset>
+                <legend><b>CONTROLE DE FALTANTES</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type= "text" name="linha" id="linha" class="inputUser" required>
+                    <label for="linha" class="labelInput" >Linha</label>
+                </div>
+                <br><br>
+            
+                
+                <div class="inputBox">
+                    <input type= "text" name="chassi" id="chassi" class="inputUser" required>
+                    <label for="chassi" class="labelInput" >Chassi</label>
+                </div>
+                <br><br>
+
+                <div class="inputBox">
+                    <input type= "text" name="peca" id="peca" class="inputUser" required>
+                    <label for="peca" class="labelInput" >P.N Peça</label>
+                </div>
+                <br><br>
+
+                <div class="inputBox">
+                    <input type= "number" name="quantidade" id="quantidade" class="inputUser" required>
+                    <label for="quantidade" class="labelInput" >Quantidade</label>
+                </div>
+                <br><br>
+
+
+                <div class="inputBox">
+                    <input type= "text" name="descricao" id="descricao" class="inputUser" required>
+                    <label for="descricao" class="labelInput" >Descrição</label>
+                </div>
+                <br><br>
+                
+                
+                <input onclick="cadastrar();" type="submit" name="botao" id="botao"> 
+
+                           
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
